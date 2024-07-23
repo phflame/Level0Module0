@@ -47,7 +47,7 @@ if __name__ == '__main__':
         # Move the turtle forward by the loop variable, *hint .forward(i)
         ekik.forward(i)
         # Turn the turtle to the right by the angle variable + 1
-        ekik.right(i)
+        ekik.right(angle + 1)
     # Hide your turtle so you can see the pattern.
         ekik.hideturtle()
     # Check the pattern against the picture in the recipe. If it matches, you are done!

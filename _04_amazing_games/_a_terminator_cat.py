@@ -58,31 +58,35 @@ if __name__ == '__main__':
     #    c. Rename the image something short (e.g. cat.gif)
     #    d. Save the image to your computer's desktop
     #    e. Drag and drop the image into this python package
-
+    set_background(('bigEyedCat.gif'))
     # 2. Call the set_background() function with your variable inside of the parenthesis
     #    for example, set_background(bg_image)
 
     # 3. Make a new turtle
-
+    ekim = turtle.Turtle()
     # 4. Set the turtle color and pen color to red (or any color you want)
+    ekim.color('red')
+    ekim.pencolor('black')
     #    using .color('red', 'red')
 
     # 5. Set the turtle width to 0 so no outlines are drawn
-
+    ekim.turtlesize(stretch_wid=0.1)
     # 6. Set the turtle speed to 0 (fastest)
-
+    ekim.speed(0)
     # 7. Run the program and click on one of the cat's eyes. 
     #    The x,y position of the eye will be printed at the bottom of your
     #    processing window.
     #    Variables for x and y have been created at the top of your sketch, 
     #    now you can set them equal to the values you just found. Watch for
     #    negative signs!
-    
+    left_eye = Eye(eye=ekim, x=-30, y=11, radius=30)
+    right_eye = Eye(eye=ekim, x=51, y=-10, radius=30)
     # 8. After you've found the x and y for the eyes create 2 eye variables
     #    and initialize them:
     #    left_eye  = Eye(eye=my_turtle, x=-34, y=11, radius=30)
     #    right_eye = Eye(eye=my_turtle, x=40, y=-5, radius=30)
-
+    left_eye.draw()
+    right_eye.draw()
     # 9. Call the .draw() method on BOTH eye variables
 
 
